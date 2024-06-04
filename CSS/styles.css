@@ -1,0 +1,143 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #caae79f5;
+    color: #333;
+}
+
+header {
+    background-color: #4d472ca2;
+    color: #ffffff;
+    padding: 1em 0;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    
+}
+
+header .logo img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section#intro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+section#maravillas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article img {
+   
+        max-width: 100%;
+        width: 400px; /* Establece el ancho a 300px */
+        height: 300px; /* Establece la altura a 200px */
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+    
+    
+}
+
+article video, article iframe {
+    max-width: 100%;
+    height: auto; /* Mantener la proporción */
+    width: 700px; /* Ajusta a un ancho específico */
+    height: 500px; /* Ajusta a una altura específica */
+}
+
+#details {
+    margin-top: 20px;
+}
+
+.detail-section {
+    display: none;
+    background-color: #caae79f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #5c4b32;
+    color: #caae79f5;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    header, nav ul {
+        text-align: center;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section#maravillas {
+        grid-template-columns: 1fr;
+    }
+}
+
+:target {
+    display: block;
+}
+
+h2 {
+    color: #4d4b32;
+}
+
+h3 {
+    color: #949052;
+}
+
+p, ul {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
